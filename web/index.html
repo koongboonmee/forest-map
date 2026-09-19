@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>แผนที่ป่าสงวนแห่งชาติ</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-content">
+
+        <img
+            src="assets/icons/forest.svg"
+            alt="ป่า"
+            class="header-icon"
+        >
+
+        <div class="header-text">
+            <h1>แผนที่ป่าสงวนแห่งชาติ</h1>
+            <p>แผนที่แสดงพื้นที่ป่าสงวนแห่งชาติของประเทศไทย</p>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        แหล่งข้อมูล: กรมป่าไม้
+    </footer>
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

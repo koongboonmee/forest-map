@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Google Sans", "Noto Sans Thai", sans-serif;
+    background: #f5f7f6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    background: transparent;
+    color: #ffffff;
+    background-color: #16693A;
+    justify-content: center; /* กึ่งกลางแนวตั้ง */
+    align-items: center;     /* กึ่งกลางแนวนอน */
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+
+
+/* =========================
+   HEADER TEXT
+========================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    background: #1b5e20;
+    color: white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch
+}
+
+/* กลุ่มไอคอน + ข้อความ */
+.header-content {
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* ไอคอน */
+.header-icon {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+/* กลุ่มข้อความ */
+.header-text {
+    text-align: left;
+}
+
+/* ชื่อเรื่อง */
+.header-text h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/* คำอธิบาย */
+.header-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* =========================
+   MAP
+========================= */
+
+#map {
+    width: 100%;
+    height: calc(100vh - 130px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    height: 40px;
+    padding: 10px 20px;
+    background: #ffffff;
+    font-size: 12px;
+    color: #555;
+}
+
+
+/* =========================
+   FONT
+========================= */
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.leaflet-container,
+.leaflet-popup-content {
+    font-family: "Google Sans", "Noto Sans Thai", sans-serif;
+}
+
+
+/* =========================
+   POPUP
+========================= */
+
+.popup {
+    font-family:
+        "Google Sans",
+        "Noto Sans Thai",
+        sans-serif;
+
+    width: 230px;
+    max-width: calc(100vw - 80px);
+}
+
+.popup-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    margin: 0 0 8px 0;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.popup-title img {
+    width: 20px;
+    height: 20px;
+}
+
+.popup-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 5px 0;
+}
+
+.popup-item > img {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.popup-item span {
+    display: block;
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 1px;
+}
+
+.popup-item strong {
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #111827;
+}
+
+.popup-divider {
+    height: 1px;
+    background: #000000;
+    margin: 8px 0 6px;
+}
+
+
+/* =========================
+   LEAFLET POPUP
+========================= */
+
+.leaflet-popup-content-wrapper {
+    border-radius: 15px;
+    background: rgb(233, 234, 236);
+    color: #076a0a;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.leaflet-popup-content {
+    margin: 12px 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        height: 60px;
+    }
+
+    .header-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* Map */
+    #map {
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+
+    /* Footer */
+    footer {
+        height: 40px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+
+    /* Popup */
+    .popup {
+        width: 220px;
+        max-width: 70vw;
+    }
+
+    .popup-title {
+        font-size: 14px;
+    }
+
+    .popup-item span {
+        font-size: 10px;
+    }
+
+    .popup-item strong {
+        font-size: 12px;
+    }
+}
